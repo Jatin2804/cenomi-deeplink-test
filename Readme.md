@@ -1,6 +1,6 @@
 # 📱 Cenomi Deep Link Tester
 
-👉 [**Open the Tester Website**](./index.html)  
+👉 [**Open the Tester Website**](https://cenomi-deeplinks-test.netlify.app/)  
 
 This tool is used to quickly test **Cenomi deep links** on a device or emulator.  
 
