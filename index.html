@@ -86,6 +86,12 @@
         font-size: 14px;
         width: 100%;
       }
+      ul.id-list {
+        font-size: 12px;
+        margin: 4px 0 0 0;
+        padding-left: 20px;
+        color: #444;
+      }
     </style>
   </head>
   <body>
@@ -161,6 +167,12 @@
     <div class="card">
       <h2>Outlet Detail</h2>
       <div class="link-hint">cenomi://outletdetail/{brandId}</div>
+      <ul class="id-list">
+        <li>2839</li>
+        <li>2963</li>
+        <li>2818</li>
+        
+      </ul>
       <div class="input-row">
         <input type="number" id="brandId" placeholder="Enter brandId" />
         <button onclick="openDynamic('cenomi://outletdetail/', 'brandId')">
@@ -173,6 +185,10 @@
     <div class="card">
       <h2>Event Detail</h2>
       <div class="link-hint">cenomi://eventdetail/{engagement_id}</div>
+      <ul class="id-list">
+        <li>474</li>
+        <li>115</li>
+      </ul>
       <div class="input-row">
         <input type="number" id="engagementId" placeholder="Enter engagementId" />
         <button onclick="openDynamic('cenomi://eventdetail/', 'engagementId')">
@@ -185,6 +201,12 @@
     <div class="card">
       <h2>Coupon Detail</h2>
       <div class="link-hint">cenomi://coupondetail/{campaignid}</div>
+      <ul class="id-list">
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+      </ul>
       <div class="input-row">
         <input type="number" id="couponId" placeholder="Enter couponId" />
         <button onclick="openDynamic('cenomi://coupondetail/', 'couponId')">
@@ -197,11 +219,62 @@
     <div class="card">
       <h2>Curated Deals Detail</h2>
       <div class="link-hint">cenomi://curateddealsdetail/{campaignid}</div>
+      <ul class="id-list">
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+      </ul>
       <div class="input-row">
         <input type="number" id="dealId" placeholder="Enter dealId" />
         <button onclick="openDynamic('cenomi://curateddealsdetail/', 'dealId')">
           Open
         </button>
+      </div>
+    </div>
+
+    <!-- Offer Description -->
+    <div class="card">
+      <h2>Offer Description</h2>
+      <div class="link-hint">cenomi://offerdescription/{engagement_id}</div>
+      <ul class="id-list">
+        <li>571</li>
+        <li>557</li>
+        <li>71</li>
+      </ul>
+      <div class="input-row">
+        <input type="number" id="offerEngagementId" placeholder="Enter engagement_id" />
+        <button onclick="openDynamic('cenomi://offerdescription/', 'offerEngagementId')">
+          Open
+        </button>
+      </div>
+    </div>
+
+    <!-- Movie Description -->
+    <div class="card">
+      <h2>Movie Description</h2>
+      <div class="link-hint">cenomi://moviedescription/{id}</div>
+      <ul class="id-list">
+        <li>2839</li>
+        <li>2963</li>
+        <li>2818</li>
+      </ul>
+      <div class="input-row">
+        <input type="number" id="movieId" placeholder="Enter movieId" />
+        <button onclick="openDynamic('cenomi://moviedescription/', 'movieId')">
+          Open
+        </button>
+      </div>
+    </div>
+
+    <!-- Mall Description -->
+    <div class="card">
+      <h2>Mall Description</h2>
+      <div class="btn-group">
+        <div class="btn-wrapper">
+          <button onclick="openLink('cenomi://malldescription')">Open Mall Description</button>
+          <div class="hint">cenomi://malldescription</div>
+        </div>
       </div>
     </div>
 
