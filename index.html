@@ -303,6 +303,8 @@
         //   alert("Please enter both mallId and value!");
         //   return;
         // }
+        if (!value) {
+          alert("Please enter a value!");
         window.location.href = `cenomi://${mallId}/${path}/${value}`;
       }
     </script>
