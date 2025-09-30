@@ -366,33 +366,18 @@
         window.location.href = "cenomi://outlets/" + finalTab;
       }
 
-      // function openDynamicWithMall(path, inputId) {
-      //   const mallId = document.getElementById('mallId').value.trim();
-      //   const value = document.getElementById(inputId).value.trim();
-      //   // if (!mallId || !value) {
-      //   //   alert("Please enter both mallId and value!");
-      //   //   return;
-      //   // }
-      //   window.location.href = `cenomi://${mallId}/${path}/${value}`;
-      // }
-
-      function openDynamicWithoutMall(path, inputId) {
+      function openDynamicWithMall(path, inputId) {
+        const mallId = document.getElementById('mallId').value.trim();
         const value = document.getElementById(inputId).value.trim();
-
-        // if (!value) {
-        //   alert("Please enter a value!");
+        // if (!mallId || !value) {
+        //   alert("Please enter both mallId and value!");
         //   return;
         // }
-
-        // const numericValue = Number(value);
-        // if (isNaN(numericValue)) {
-        //   alert("Please enter a valid number!");
-        //   return;
-        // }
-
-        // Removed mallId from the URL
-        window.location.href = `cenomi://${path}/${numericValue}`;
+        // window.location.href = `cenomi://${mallId}/${path}/${value}`;
+        window.location.href = `cenomi://${path}/${value}`;
       }
+
+     
     </script>
   </body>
 </html>
