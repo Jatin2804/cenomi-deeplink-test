@@ -379,16 +379,16 @@
       function openDynamicWithoutMall(path, inputId) {
         const value = document.getElementById(inputId).value.trim();
 
-        if (!value) {
-          alert("Please enter a value!");
-          return;
-        }
+        // if (!value) {
+        //   alert("Please enter a value!");
+        //   return;
+        // }
 
-        const numericValue = Number(value);
-        if (isNaN(numericValue)) {
-          alert("Please enter a valid number!");
-          return;
-        }
+        // const numericValue = Number(value);
+        // if (isNaN(numericValue)) {
+        //   alert("Please enter a valid number!");
+        //   return;
+        // }
 
         // Removed mallId from the URL
         window.location.href = `cenomi://${path}/${numericValue}`;
