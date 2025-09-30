@@ -369,11 +369,16 @@
       function openDynamicWithMall(path, inputId) {
         const mallId = document.getElementById('mallId').value.trim();
         const value = document.getElementById(inputId).value.trim();
-        if (!mallId || !value) {
-          alert("Please enter both mallId and value!");
+        if (!value) {
+          alert("Please enter value!");
           return;
         }
-        window.location.href = `cenomi://${mallId}/${path}/${value}`;
+        if (!mallId) {
+          window.location.href = `cenomi://${path}/${value}`;
+
+        }else{
+          window.location.href = `cenomi://${mallId}/${path}/${value}`;
+        }
        
       }
 
