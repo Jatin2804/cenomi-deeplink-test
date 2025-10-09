@@ -103,9 +103,26 @@
       <div class="link-hint">
         Possible Mall IDs:
         <ul class="id-list">
-          <li>1078 - Al Nakheel Mall Dammam</li>
-          <li>163 - Al Jubail Mall</li>
-          <li>3473 - U Walk Jeddah</li>
+          <li> 1078    - Aziz Mall Dammam</li>
+          <li> 1457    - Al Nakheel Mall</li>
+          <li> 85      - Al Ahsa Mall</li>
+          <li> 163     - Al Jubail Mall</li>
+          <li> 59      - Al Humara Mall</li>
+          <li> 24165   - The View Mall</li>
+          <li> 2482    - Salaam Mall</li>
+          <li> 3214    - Tala Mall</li>
+          <li> 3327    - U Walk Riyadh </li>
+          <li> 352     - Juri Mall</li>
+          <li> 1       - Makkah Mall</li>
+          <li> 2107    - Salaam Mall  JEDDAH </li>
+          <li> 3691    - Yasmeen Mall </li>
+          <li> 13      - Aziz Mall  Jeddan</li>
+          <li> 1987    - Al Nakheel Plaza </li>
+          <li> 143     - Haifa Mall </li>
+          <li> 198     - Jeddah Park </li>
+          <li> 678     - - Mall Of Arabia </li>
+          <li> 3473    - U Walk Jeddah </li>
+          <li> 615     - Al Noor Mall </li>
         </ul>
       </div>
       <div class="input-row">
@@ -374,7 +391,7 @@
       }
 
       function openDynamicWithMall(path, inputId) {
-        const mallId = document.getElementById('mallId').value.trim();
+        const mallId = document.getElementById("mallId").value.trim();
         const value = document.getElementById(inputId).value.trim();
         if (!value) {
           alert("Please enter value!");
@@ -382,14 +399,10 @@
         }
         if (!mallId) {
           window.location.href = `cenomi://${path}/${value}`;
-
-        }else{
+        } else {
           window.location.href = `cenomi://${mallId}/${path}/${value}`;
         }
-       
       }
-
-     
     </script>
   </body>
 </html>
