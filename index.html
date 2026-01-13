@@ -239,7 +239,7 @@
   <!-- Offers -->
   <div class="card">
     <h2>Offers</h2>
-    <div class="btn-group">
+    <!-- <div class="btn-group">
       <div class="btn-wrapper">
         <button onclick="openOffer('mallOffers')">Mall Offers</button>
         <div class="hint">cenomi://offers/mallOffers</div>
@@ -260,7 +260,16 @@
         <button onclick="openOffer('invalidTab')">Invalid → Default</button>
         <div class="hint">cenomi://offers/invalidTab</div>
       </div>
-    </div>
+    </div> -->
+       <div class="btn-wrapper">
+        <button onclick="openLink('cenomi://loyalty/mall-offers-catalog')">
+          Mall Offers Catalog
+        </button>
+        <div class="hint">
+          cenomi://loyalty/mall-offers-catalog
+          <span class="protected-badge">Protected</span>
+        </div>
+      </div>
   </div>
 
   <div class="section-divider"></div>
@@ -322,7 +331,7 @@
 
   <!-- Event Detail -->
   <div class="card">
-    <h2>Event Detail <span class="mall-id-badge">(mall id)</span></h2>
+    <h2>Event Detail <span class="mall-id-badge">(mall id) 678 - mall of arabia</span></h2>
     <div class="link-hint">cenomi://{mallId}/eventdetail/{engagement_id}</div>
     <ul class="id-list">
       <li><span class="id-value">474</span><button class="copy-btn" onclick="copyToClipboard('474', this)">Copy</button>
@@ -340,7 +349,7 @@
 
   <div class="section-divider"></div>
 
-  <!-- Coupon Detail -->
+  <!-- Coupon Detail 
   <div class="card">
     <h2>Coupon Detail <span class="mall-id-badge">(mall id)</span></h2>
     <div class="link-hint">cenomi://{mallId}/coupondetail/{campaignid}</div>
@@ -364,7 +373,7 @@
 
   <div class="section-divider"></div>
 
-  <!-- Curated Deals Detail -->
+  Curated Deals Detail
   <div class="card">
     <h2>Curated Deals Detail <span class="mall-id-badge">(mall id)</span></h2>
     <div class="link-hint">
@@ -388,12 +397,12 @@
       </button>
     </div>
   </div>
-
+-->
   <div class="section-divider"></div>
 
   <!-- Offer Description -->
   <div class="card">
-    <h2>Offer Description <span class="mall-id-badge">(mall id)</span></h2>
+    <h2>Offer Description <span class="mall-id-badge">(mall id) 678 - mall of arabia</span></h2>
     <div class="link-hint">
       cenomi://{mallId}/offerdescription/{engagement_id}
     </div>
@@ -569,7 +578,7 @@
 
 
     <div class="btn-group" style="margin-top: 12px;">
-      <div class="btn-wrapper">
+      <!-- <div class="btn-wrapper">
         <button onclick="openLink('cenomi://loyalty/plus-marketplace')">
           Plus Marketplace
         </button>
@@ -577,16 +586,7 @@
           cenomi://loyalty/plus-marketplace
           <span class="protected-badge">Protected</span>
         </div>
-      </div>
-      <div class="btn-wrapper">
-        <button onclick="openLink('cenomi://loyalty/mall-offers-catalog')">
-          Mall Offers Catalog
-        </button>
-        <div class="hint">
-          cenomi://loyalty/mall-offers-catalog
-          <span class="protected-badge">Protected</span>
-        </div>
-      </div>
+      </div> -->
       <div class="btn-wrapper">
         <button onclick="openLink('cenomi://loyalty/benefits')">
           Benefits
